@@ -10,12 +10,8 @@ Built using scikit-learn library and content-based filtering
 Provides an interactive way to rate or skip recommendations: smash (👍) or pass (👎)
 
 ## 🛠 Tech Stack
-Python
-
-scikit-learn
-
-pandas / NumPy
-
-Streamlit (optional for UI)
-
-IMDb dataset
+- Python
+- scikit-learn
+- pandas / NumPy
+- Streamlit (optional for UI)
+- IMDb dataset
