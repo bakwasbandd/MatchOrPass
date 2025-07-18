@@ -11,7 +11,7 @@ Provides an interactive way to rate or skip recommendations: smash (👍) or pas
 
 ## 🛠 Tech Stack
 - Python
-- scikit-learn
+- 📄 scikit-learn
 - pandas / NumPy
-- Streamlit (optional for UI)
-- IMDb dataset
+- 🎨 Streamlit (optional for UI)
+- 🖼️ TMDb API for posters
