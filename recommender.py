@@ -33,9 +33,11 @@ class MovieRecommender:
         recommendations = []
         for i in movie_indices:
             movie_title = movies.df.iloc[i]['title']
+            movie_overview = movies.df.iloc[i]['overview']
             poster_url = movies.get_poster_url(movie_title)
             recommendations.append({
                 'title': movie_title,
+                'overview': movie_overview,
                 'poster_url': poster_url
             })
         return recommendations

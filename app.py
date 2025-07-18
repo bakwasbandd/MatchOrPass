@@ -100,18 +100,17 @@ with col2:
         if recs:
             st.subheader("Recommendations🎥✮⋆˙")
             for rec in recs:
-                col1, col2 = st.columns([1, 3])
+                col1, col2 = st.columns([2, 4])
                 with col1:
                     if rec['poster_url']:
                         st.image(rec['poster_url'], width=200)
                     else:
-                        st.write("No poster")
+                        st.write("Poster not found :(")
                 with col2:
                     st.markdown(f"**{rec['title']}**")
-
-            def load_lottie_file(filepath):
-                with open(filepath, "r") as f:
-                    return json.load(f)
+                    st.markdown(
+                        f"<div style='font-size: 0.7em; color: #CCCCCC;'>{rec['overview']}</div>", unsafe_allow_html=True)
+                    st.subheader("")
 
             lottie_tape = load_lottie_file(
                 "D:\\Muntaha\\ML\\MatchOrPass\\images\\rollingtape.json")
